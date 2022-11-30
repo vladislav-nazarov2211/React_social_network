@@ -1,0 +1,104 @@
+.description_block {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.description_block__info {
+    margin-left: 30px;
+    line-height: 20px;
+    color: rgb(110, 108, 108);
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.description_block__info span {
+    color: rgb(3, 1, 139);
+}
+
+.avatar {
+    height: 100%;
+    width: 110px;
+    position: relative;
+}
+
+.avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.btn {
+    position: absolute;
+    right: 10px;
+    background-color: transparent;
+    font-size: 17px;
+    padding: 0 10px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    border-radius: 10px;
+    color: rgb(110, 108, 108);
+    transition: .3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    padding-right: 6px;
+}
+
+.inputStatus {
+    padding-left: 10px;
+    min-width: 300px;
+    min-height: 22px;
+    resize: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+}
+
+
+
+.inputStatus:focus {
+    outline: none;
+    background-color: rgb(250, 250, 250);
+}
+
+.status {
+    transition: .3s;
+    display: inline-block;
+}
+
+.status:hover {
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+.loadPhoto {
+    position: absolute;
+    top: 156px;
+    right: 30px;
+}
+
+.loadPhoto input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.loadPhoto label {
+    background-color: #45dac69a;
+    font-size: 15px;
+    padding: 3px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    border-radius: 10px;
+    color: rgb(110, 108, 108)
+}
+
+.loadPhoto label:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+}

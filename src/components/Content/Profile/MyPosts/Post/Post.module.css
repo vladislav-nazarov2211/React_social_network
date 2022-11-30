@@ -1,0 +1,52 @@
+.item {
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    border-radius: 10px;
+    position: relative;
+}
+
+.img_wrapper {
+    width: 50px;
+    height: 50px;
+}
+
+.img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.date {
+    margin-right: 10px;
+}
+
+.btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.btn button {
+    background-color: transparent;
+    font-size: 18px;
+    padding: 0 10px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    border-radius: 10px;
+    color: rgb(110, 108, 108);
+    transition: .3s;
+}
+
+.btn button:hover {
+    cursor: pointer;
+    padding-right: 6px;
+}
+
+.date {
+    position: absolute;
+    top: 23px;
+    left: 70px;
+}
+
+.postText {
+    padding-top: 5px;
+}

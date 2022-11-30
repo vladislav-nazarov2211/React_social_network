@@ -1,0 +1,9 @@
+.wrapper {
+    border-radius: 10px;
+    height: 100vh;
+    background: -webkit-linear-gradient(45deg, #97d1fa,#00d4b6,#fdfcc5);
+    background: linear-gradient(45deg, #97d1fa,#00d4b6,#fdfcc5);
+    border: 1px solid #02bda4;
+}
+
+

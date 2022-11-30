@@ -1,0 +1,168 @@
+.loginWrapper {
+    background: linear-gradient(-45deg, #fdfb7d, #a7fcab, #97d1fa, #6cc2ff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Sansita Swashed", cursive;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.center {
+    position: relative;
+    padding: 50px 50px;
+    background: rgba(0, 0, 0, 0.205);
+    border-radius: 10px;
+    border: 5px solid white;
+  }
+  .center h1 {
+    font-size: 2em;
+    border-left: 5px solid dodgerblue;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  .center .inputbox {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 50px;
+  }
+  .center .inputbox input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid #000;
+    outline: none;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+  }
+  .center .inputbox:last-child {
+    margin-bottom: 0;
+  }
+  .center .inputbox span {
+    position: absolute;
+    top: 14px;
+    right: 5px;
+    font-size: 1em;
+    transition: 0.6s;
+    color: black;
+  }
+  .center .inputbox input:focus ~ span,
+  .center .inputbox input:valid ~ span {
+    transform: translateY(-35px);
+    font-size: 1em;
+  }
+  .center .inputbox [type="submit"] {
+    width: 50%;
+    background: dodgerblue;
+    color: #fff;
+    border: #fff;
+
+  }
+  .center .inputbox:hover [type="submit"] {
+    background: linear-gradient(45deg, greenyellow, dodgerblue);
+    cursor: pointer;
+  }
+
+  .preloaderPosition_2 {
+    position: absolute;
+    left: 25%;
+    
+    border: 1px solid black;
+    height: 40px;
+    transform: translateX(-50%);
+    width: 150px;
+    border-radius: 10px;
+    z-index: 10;
+    position: relative;
+  }
+
+  .preloaderPosition_2::before {
+    content: 'Loading...';
+    position: absolute;
+    left: 50px;
+    top: 10px;
+  }
+
+  .errorEmail {
+    color: red;
+    position: absolute;
+    top: 244px;
+  }
+
+  .errorPassword {
+    color: red;
+    position: absolute;
+    bottom: 130px;
+  }
+
+
+
+  .error {
+    -moz-animation: cssAnimation 0s ease-in 1.5s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 1.5s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 1.5s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 1.5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    color: red;
+    position: absolute;
+    top: 60px;
+  }
+  @keyframes cssAnimation {
+      to {
+          width:0;
+          height:0;
+          overflow:hidden;
+      }
+  }
+  @-webkit-keyframes cssAnimation {
+      to {
+          width:0;
+          height:0;
+          visibility:hidden;
+      }
+  }
+
+  .captcha {
+    position: absolute;
+    right: -55px;
+    bottom: -3px;
+  }
+
+  .inputCaptcha { 
+    position: absolute;
+    right: 0;
+    top: 52px !important;
+  }
+
+  .inputCaptcha::placeholder {
+    color: rgba(0, 0, 0, 0.356);
+  }

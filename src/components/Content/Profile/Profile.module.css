@@ -1,0 +1,61 @@
+.wrapper {
+    border-radius: 10px;
+    height: 100vh;
+    background: -webkit-linear-gradient(45deg, #97d1fa,#00d4b6,#fdfcc5);
+    background: linear-gradient(45deg, #97d1fa,#00d4b6,#fdfcc5);
+    border: 1px solid #02bda4;
+    padding: 20px;
+    position: relative;
+}
+
+.preloaderPosition_1 {
+    position:  absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.description_block {
+    line-height: 25px;
+}
+
+.description_block input {
+    padding-left: 10px;
+    min-width: 300px;
+    min-height: 20px;
+    resize: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #ffffff8e;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+}
+
+.description_block input:focus {
+    outline: none;
+    background-color: rgb(250, 250, 250);
+}
+
+.btn {
+    position: absolute;
+    left: 20px;
+    margin-top: 10px;
+    background-color: transparent;
+    font-size: 17px;
+    padding: 0 10px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    border-radius: 10px;
+    color: rgb(110, 108, 108);
+    transition: .3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    padding-left: 6px;
+}
+
+.errorEmail {
+    color: red;
+    position: absolute;
+    right: 280px;
+    top: 164px;
+}

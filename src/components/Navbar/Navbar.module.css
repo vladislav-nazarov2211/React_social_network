@@ -1,0 +1,27 @@
+.wrapper {
+    background-color: aliceblue;
+    border-radius: 10px;
+    height: 100vh;
+    background: -webkit-linear-gradient(45deg, #70b0dd,#00d4b6,#fdfcc5);
+    background: linear-gradient(45deg, #00d4b6,#99dbcb,#00d4b6);
+    padding: 10px;
+    line-height: 30px;
+    border: 1px solid #02bda4;
+}
+
+.item {
+    font-size: 17px;  
+   display: block;
+   text-decoration: none;
+   color: rgb(3, 1, 139);
+   transition: .3s;
+}
+
+.wrapper a:hover {
+    font-size: 18px;
+}
+
+.active { 
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}

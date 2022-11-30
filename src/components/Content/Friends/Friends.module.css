@@ -1,0 +1,137 @@
+.wrapper {
+    border-radius: 10px;
+    height: 100vh;
+    background: -webkit-linear-gradient(45deg, #97d1fa,#00d4b6,#fdfcc5);
+    background: linear-gradient(45deg, #97d1fa,#00d4b6,#fdfcc5);
+    border: 1px solid #02bda4;
+    padding: 0 10px;
+}
+
+.friends {
+    overflow-y: auto;
+    scroll-snap-type: mandatory;
+    max-height: 696px;
+}
+
+.friends::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f9f9fd;
+    border-radius: 10px;
+}
+  
+.friends::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #18aaaa;
+}
+  
+.friends::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #f9f9fd;
+}
+
+.item {
+    background-color: rgba(0, 0, 0, 0.082);
+    padding: 10px;
+    margin: 10px 0 10px;
+    border: 1.8px solid rgb(3, 1, 139);
+    border-radius: 10px;
+    position: relative;
+}
+
+.item_avatar {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.item_avatar__img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.item_info {
+    color: rgb(3, 1, 139);
+    margin: 5px 0px;
+    line-height: 20px;
+}
+
+.item_info__btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.item_info__btn button {
+    background-color: transparent;
+    font-size: 18px;
+    padding: 0 10px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    border-radius: 10px;
+    color: rgb(110, 108, 108);
+    transition: .3s;
+}
+
+.item_info__btn button:hover {
+    cursor: pointer;
+    padding-right: 6px;
+}
+
+.alert {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+.modal {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+.modal__content {
+    min-width: 400px;
+    min-height: 120px;
+    background-color: #00d4b6;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal__content textarea {
+    height: 75px;
+    width: 400px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    resize: none;
+}
+
+.modal__content textarea:focus {
+    outline: none;
+}
+
+.modal__content button {
+    transition: .3s;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(3, 1, 139);
+    position: absolute;
+    right: 15px;
+}
+
+.modal__content button:hover {
+    font-size: 17px;
+    cursor: pointer;
+}
+

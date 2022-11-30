@@ -1,0 +1,52 @@
+.wrapper {
+    padding: 20px 20px;
+    position: relative;
+    display: block;
+}
+
+.btns_pages {
+    display: flex;
+    justify-content: center;
+}
+
+.selectedPage {
+    color: rgb(255, 0, 0);
+}
+
+.btns {
+    background-color: transparent;
+    font-size: 18px;
+    padding: 0 10px;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    border-radius: 10px;
+    color: rgb(110, 108, 108);
+    transition: .3s;
+}
+
+.btnPrev {
+    position: absolute;
+    left: 10px;
+}
+
+.btnPrev:hover {
+    cursor: pointer;
+    padding-left: 7px;
+}
+
+.btnNext {
+    position: absolute;
+    right: 10px;
+}
+
+.btnNext:hover {
+    cursor: pointer;
+    padding-right: 7px;
+}
+
+.pageNumber {
+    margin: 0 5px;
+}
+
+.pageNumber:hover {
+    cursor: pointer;
+}

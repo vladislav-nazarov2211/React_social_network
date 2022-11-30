@@ -1,0 +1,134 @@
+.wrapper {
+    border-radius: 10px;
+    height: 100vh;
+    background: -webkit-linear-gradient(45deg, #97d1fa,#00d4b6,#fdfcc5);
+    background: linear-gradient(45deg, #97d1fa,#00d4b6,#fdfcc5);
+    border: 1px solid #02bda4;
+    display: grid;
+    grid-template-columns: 6fr 10fr;
+    position: relative;
+}
+
+.dialog {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.avatar_wrapper {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.avatar_wrapper__img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.dialogs__items {
+    padding: 20px 20px;
+    border-right: 1px solid rgb(250, 250, 250);
+}
+
+.dialog__item {
+    text-decoration: none;
+    color: rgb(3, 1, 139);
+}
+
+.active { 
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.dialog__item:focus {
+    color: #ffffff;
+}
+
+.messages {
+    padding: 30px;
+    position: relative;
+    overflow-y: auto;
+    scroll-snap-type: mandatory;
+    max-height: 540px;
+}
+
+.messages::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f9f9fd;
+    border-radius: 10px;
+    
+}
+  
+.messages::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #18aaaa;
+}
+  
+.messages::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #f9f9fd;
+}
+
+.messages div:nth-child(even) {
+    float: right;
+    color: white;
+    clear: both;
+    margin-bottom: 20px;
+    background-color: #97d1fa;
+    font-size: 17px;
+    padding: 0 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+} 
+
+.messages div:nth-child(odd) {
+    float: left;
+    color: black;
+    clear: both;
+    margin-bottom: 20px;
+    background-color: rgb(230, 242, 253);
+    font-size: 17px;
+    padding: 0 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+} 
+
+.dialogs_area {
+    padding-left: 10px;
+    min-width: 55%;
+    min-height: 20px;
+    resize: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #ffffff8e;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    position: absolute;
+    top: 650px;
+    right: 20px;
+}
+
+.dialogs_area:focus {
+    outline: none;
+    background-color: rgb(250, 250, 250);
+}
+
+.btnToSend {
+    position: absolute;
+    right: 20px;
+    top: 690px;
+}
+
+.btnToSend button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(3, 1, 139);
+    font-size: 16px;
+    transition: .3s;
+}
+
+.btnToSend button:hover {
+    cursor: pointer;
+    font-size: 17px;
+}
